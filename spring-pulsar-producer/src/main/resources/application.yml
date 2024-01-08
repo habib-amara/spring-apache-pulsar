@@ -1,0 +1,16 @@
+spring:
+  sql:
+    init:
+      mode: never
+  application:
+    name: book-microservice
+
+server:
+  port: 8081
+
+# Pulsar Producer properties
+pulsar:
+  producer:
+    url: pulsar://localhost:6650
+    topic: notification-topic
+    producer-name: notification_sender
